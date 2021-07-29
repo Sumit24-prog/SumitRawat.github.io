@@ -1,3 +1,4 @@
+/*root for declare variable */
 :root{ 
     --mainColor:#eaeaea;
     --secondaryColor:#fff; 
@@ -26,11 +27,14 @@ html,body{
 
 /*all heading*/
 h1,h2,h3,h4,h5,h6,strong{  
-    color: var(--mainText); 
+    color: var(--mainText);  
+    font-family: 'sans serif'; 
+    font-weight: 500;
 } 
 
 /*list span,etc*/
-li,span,label,input,textarea{
+li,span,label,input,textarea{ 
+    font-family: 'Roboto', 'monospace';
     color:var(--secondaryText);
 }    
 
@@ -61,6 +65,48 @@ h6{ font-size: 16px; }
     width:1200px;
     margin: 0 auto;
 } 
+
+/*Greeting Wrapper */
+.greeting-wrapper{
+    display:grid;
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
+}
+
+/*intro wrapper*/
+.intro-wrapper{
+    background-color: var(--secondaryColor); 
+    border:1px solid var(--borderColor);  
+    border-radius:10px 10px 0 0 ;
+    box-shadow: 18px -5px 14px 3px rgba(0,0,0,0.9);
+    -webkit-box-shadow: 18px -5px 14px 3px rgba(0,0,0,0.9);
+    -moz-box-shadow: 18px -5px 14px 3px rgba(0,0,0,0.9); 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 20em; 
+    grid-template-areas: 
+    'nav-wrapper nav-wrapper'
+    'left-column right-column';
+} 
+
+
+/*nav-wrapper*/
+.nav-wrapper {
+    grid-area: nav-wrapper; 
+    border-bottom: 1px solid var(--borderColor);
+}
+
+/*left-column*/
+.left-column { 
+    grid-area: left-column;
+}
+
+/*right-column*/
+.right-column { 
+    grid-area: right-column;
+}
+
 
 /*responsive*/
 @media screen and (max-width:1200px){
