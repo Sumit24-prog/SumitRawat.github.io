@@ -9,7 +9,7 @@
     --imageColor:rgba(78, 78, 78, 0.815);
 
     --themeDotBorder:#a6c4e2; 
-    --previewBg: #b3b3b3bb;
+    --previewBg: #868585bb;
     --previewShadow: #636363cc;
 }  
 
@@ -50,13 +50,18 @@ h5{ font-size: 20px; }
 h6{ font-size: 16px; }    
 
 /*only sections -1*/
-.s1{
+#profile{
     background-color:var(--mainColor);
     border-bottom:var(--borderColor); 
     background-image:url("images/Background.jpg") ;
     background-repeat: no-repeat;
     background-size: 1500px 800px; 
-}  
+}   
+
+.s1{
+    background-color:var(--mainColor);
+    border-bottom:var(--borderColor);
+}
 
 /*only sections -2*/
 .s2{
@@ -84,7 +89,7 @@ h6{ font-size: 16px; }
     background-color: var(--secondaryColor); 
     border:1px solid var(--borderColor);   
     /* border-bottom: 105px solid var(--borderColor);  */
-    border-radius:10px 10px 0px 0px ; 
+    border-radius:3px 3px 0px 0px ; 
 
     /*box shadow*/
     box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
@@ -108,7 +113,7 @@ h6{ font-size: 16px; }
 
 /*nav-wrapper*/
 .nav-wrapper {
-    border-radius:10px 10px 0px 0px ;
+    border-radius:3px 3px 0px 0px ;
     grid-area: nav-wrapper; 
     border-bottom: 1px solid var(--borderColor); 
     display: flex; 
