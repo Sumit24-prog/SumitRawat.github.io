@@ -2,15 +2,15 @@
 :root{ 
     --mainColor:#16131370;
     --secondaryColor:rgba(0, 0, 0, 0.555); 
-    --borderColor:#424141fb;
+    --borderColor:#d6d6d6fb;
 
     --mainText:rgb(243, 243, 243);
-    --secondaryText:#a8a8a8;
-    --imageColor:rgba(151, 148, 148, 0.815);
+    --secondaryText:#424242;
+    --imageColor:rgba(78, 78, 78, 0.815);
 
     --themeDotBorder:#a6c4e2; 
-    --previewBg: #8c8c8dbb;
-    --previewShadow: #a1a1a8cc;
+    --previewBg: #b3b3b3bb;
+    --previewShadow: #636363cc;
 }  
 
 /*body*/
@@ -55,7 +55,7 @@ h6{ font-size: 16px; }
     border-bottom:var(--borderColor); 
     background-image:url("images/Background.jpg") ;
     background-repeat: no-repeat;
-    background-size: 1500px 800px;
+    background-size: 1500px 800px; 
 }  
 
 /*only sections -2*/
@@ -87,14 +87,22 @@ h6{ font-size: 16px; }
     border-radius:10px 10px 0px 0px ; 
 
     /*box shadow*/
-    box-shadow: 12px -8px 15px 1px rgba(0,0,0,0.94);
-    -webkit-box-shadow: 12px -8px 15px 1px rgba(0,0,0,0.94);
-    -moz-box-shadow: 12px -8px 15px 1px rgba(0,0,0,0.94);
+    box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     'nav-wrapper nav-wrapper'
-    'left-column right-column';
+    'left-column right-column'; 
+    
+    /*box gradient*/
+    background: -moz-linear-gradient(top,  rgba(76,76,76,0) 0%, rgba(89,89,89,0) 12%, rgba(102,102,102,0) 25%, rgba(71,71,71,0) 39%, rgba(44,44,44,0) 50%, rgba(0,0,0,0) 51%, rgba(17,17,17,0.26) 60%, rgba(43,43,43,0.73) 76%, rgba(34,34,34,0.99) 85%, rgba(28,28,28,0.99) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(76,76,76,0) 0%,rgba(89,89,89,0) 12%,rgba(102,102,102,0) 25%,rgba(71,71,71,0) 39%,rgba(44,44,44,0) 50%,rgba(0,0,0,0) 51%,rgba(17,17,17,0.26) 60%,rgba(43,43,43,0.73) 76%,rgba(34,34,34,0.99) 85%,rgba(28,28,28,0.99) 91%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(76,76,76,0) 0%,rgba(89,89,89,0) 12%,rgba(102,102,102,0) 25%,rgba(71,71,71,0) 39%,rgba(44,44,44,0) 50%,rgba(0,0,0,0) 51%,rgba(17,17,17,0.26) 60%,rgba(43,43,43,0.73) 76%,rgba(34,34,34,0.99) 85%,rgba(28,28,28,0.99) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+
+
 } 
 
 
@@ -177,11 +185,10 @@ h6{ font-size: 16px; }
     height:200px;
     width: 160px; 
     object-fit: cover; 
-
     /*box shadow*/
-    box-shadow: 0px -27px 21px -6px rgba(0,0,0,0.82);
--webkit-box-shadow: 0px -27px 21px -6px rgba(0,0,0,0.82);
--moz-box-shadow: 0px -27px 21px -6px rgba(0,0,0,0.82);  
+    box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75); 
     border-bottom: 1px solid var(--secondaryText);
     border-left: 1px solid var(--secondaryText);
     border-right: 1px solid var(--secondaryText); 
@@ -257,7 +264,10 @@ h6{ font-size: 16px; }
     height: 180px;
     padding-left: 30px;
     padding-top: 30px;
-    border-radius:4px 4px 4px 4px ;
+    border-radius:4px 4px 4px 4px ; 
+    box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
 }
 
 /*message box preview*/
@@ -267,7 +277,10 @@ h6{ font-size: 16px; }
     border: 1.5px solid var(--borderColor);
     background-color: var(--previewBg); 
     padding: 15px;
-    position: relative;
+    position: relative; 
+    box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
 }
 
 /*corner balls*/
@@ -275,8 +288,8 @@ h6{ font-size: 16px; }
     width:7px;
     height: 7px;
     border-radius: 50%;
-    border: 1.5px solid #17a2b8;
-    background-color:#fff;
+    border: 1.5px solid #fff;
+    background-color:#161515;
     position:absolute;
 }
 
