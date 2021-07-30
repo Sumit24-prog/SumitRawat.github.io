@@ -1,15 +1,16 @@
 /*root for declare variable */
 :root{ 
-    --mainColor:#eaeaea;
-    --secondaryColor:#fff; 
-    --borderColor:#c1c1c1;
+    --mainColor:#16131370;
+    --secondaryColor:rgba(0, 0, 0, 0.555); 
+    --borderColor:#424141fb;
 
-    --mainText:black;
-    --secondaryText:#4b5156;
+    --mainText:rgb(243, 243, 243);
+    --secondaryText:#a8a8a8;
+    --imageColor:rgba(151, 148, 148, 0.815);
 
-    --themeDotBorder:#24292e; 
-    --previewBg: rgba(221, 199, 132, 0.8);
-    --previewShadow: #dab53c;
+    --themeDotBorder:#a6c4e2; 
+    --previewBg: #8c8c8dbb;
+    --previewShadow: #a1a1a8cc;
 }  
 
 /*body*/
@@ -26,7 +27,7 @@ a{
 } 
 
 /*all heading*/
-h1,h2,h3,h4,h5,h6,strong{  
+h1,h2,h3,h4,h5,h6,strong,#settings-notes{  
     color: var(--mainText);  
     font-family: 'sans serif'; 
     font-weight: 500;
@@ -51,7 +52,10 @@ h6{ font-size: 16px; }
 /*only sections -1*/
 .s1{
     background-color:var(--mainColor);
-    border-bottom:var(--borderColor);
+    border-bottom:var(--borderColor); 
+    background-image:url("images/Background.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
 }  
 
 /*only sections -2*/
@@ -62,8 +66,9 @@ h6{ font-size: 16px; }
 
 /*only main-container */
 .main-container{
-    width:1200px;
-    margin: 0 auto;
+    width:1200px; 
+    height:800px;
+    margin: 0 auto; 
 } 
 
 /*Greeting Wrapper */
@@ -77,13 +82,14 @@ h6{ font-size: 16px; }
 /*intro wrapper*/
 .intro-wrapper{
     background-color: var(--secondaryColor); 
-    border:1px solid var(--borderColor);  
-    border-radius:10px 10px 4px 4px ; 
+    border:1px solid var(--borderColor);   
+    /* border-bottom: 105px solid var(--borderColor);  */
+    border-radius:10px 10px 0px 0px ; 
 
     /*box shadow*/
-    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9);
-    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9);
-    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9); 
+    box-shadow: 12px -8px 15px 1px rgba(0,0,0,0.94);
+    -webkit-box-shadow: 12px -8px 15px 1px rgba(0,0,0,0.94);
+    -moz-box-shadow: 12px -8px 15px 1px rgba(0,0,0,0.94);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -94,7 +100,7 @@ h6{ font-size: 16px; }
 
 /*nav-wrapper*/
 .nav-wrapper {
-    border-radius:10px 10px 0 0 ;
+    border-radius:10px 10px 0px 0px ;
     grid-area: nav-wrapper; 
     border-bottom: 1px solid var(--borderColor); 
     display: flex; 
@@ -142,34 +148,44 @@ h6{ font-size: 16px; }
 
 /*dot-color 1 */ 
 #dot-1{
-    background-color:#e94037;
+    background-color:#f8180cda;
 }
 
 /*dot-color 2 */ 
 #dot-2{
-    background-color: #f3b420;
+    background-color: #fdb204e8;
 }
 
 /*dot-color 3 */ 
 #dot-3{
-    background-color: #1ab92f;
+    background-color: #04f825de;
 }
 
 /*left-column*/
 .left-column { 
     grid-area: left-column; 
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
 }
 
 /*image */
-#profile-pic{ 
+#profile-pic{  
+    background-color: var(--imageColor); 
     display:block;
-    margin:0 auto;
+    margin:0 auto; 
+    padding: 70px 0px 0px 0px;
     height:200px;
     width: 160px; 
-    object-fit: scale-down;
-    border: 2px solid var(--borderColor);
+    object-fit: cover; 
+
+    /*box shadow*/
+    box-shadow: 0px -27px 21px -6px rgba(0,0,0,0.82);
+-webkit-box-shadow: 0px -27px 21px -6px rgba(0,0,0,0.82);
+-moz-box-shadow: 0px -27px 21px -6px rgba(0,0,0,0.82);  
+    border-bottom: 1px solid var(--secondaryText);
+    border-left: 1px solid var(--secondaryText);
+    border-right: 1px solid var(--secondaryText); 
+    border-radius: 5px 5px 40px 40px;
 }  
 
 /*theme option at center */
@@ -248,7 +264,7 @@ h6{ font-size: 16px; }
 #preview{
     width: 300px;
     height: 180px;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid var(--borderColor);
     background-color: var(--previewBg); 
     padding: 15px;
     position: relative;
@@ -288,6 +304,10 @@ h6{ font-size: 16px; }
     left: -5px;
 }
 
+#What-i{
+    color:black;
+}
+
 /*responsive*/
 @media screen and (max-width:1200px){
     .main-container{
@@ -296,7 +316,13 @@ h6{ font-size: 16px; }
 }
 
 @media screen and (max-width:800px){
-    .intro-wrapper{
+    .main-container{
+        height:auto;
+    } 
+    .s1{
+        background-size:auto ;
+    }
+    .intro-wrapper{ 
         grid-template-columns: 1fr;
         grid-template-areas: 
         'nav-wrapper'
