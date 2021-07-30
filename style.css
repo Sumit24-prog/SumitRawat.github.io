@@ -15,15 +15,10 @@ html,body{
 }  
 
 /* all link of home,about,etc */
-#p{
+a{
     text-decoration: none;  
-    color:var(--mainText);
+    color:#17a2b8;;
 } 
-
-/*only a link*/ 
-#link{
-    color:#17a2b8;
-}
 
 /*all heading*/
 h1,h2,h3,h4,h5,h6,strong{  
@@ -78,10 +73,12 @@ h6{ font-size: 16px; }
 .intro-wrapper{
     background-color: var(--secondaryColor); 
     border:1px solid var(--borderColor);  
-    border-radius:10px 10px 0 0 ;
-    box-shadow: 18px -5px 14px 3px rgba(0,0,0,0.9);
-    -webkit-box-shadow: 18px -5px 14px 3px rgba(0,0,0,0.9);
-    -moz-box-shadow: 18px -5px 14px 3px rgba(0,0,0,0.9); 
+    border-radius:10px 10px 0 0 ; 
+
+    /*box shadow*/
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9); 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3em 20em; 
@@ -93,8 +90,56 @@ h6{ font-size: 16px; }
 
 /*nav-wrapper*/
 .nav-wrapper {
+    border-radius:10px 10px 0 0 ;
     grid-area: nav-wrapper; 
-    border-bottom: 1px solid var(--borderColor);
+    border-bottom: 1px solid var(--borderColor); 
+    display: flex; 
+    justify-content:space-between; 
+    align-items:center; 
+    background-color: var(--mainColor); 
+}  
+
+/*navigation*/
+#navigation {
+    margin:0;
+    padding: 10px;
+}
+
+/*navigation li*/
+#navigation li{ 
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/*dots-wrapper*/
+.dots-wrapper{
+    display: flex; 
+    padding:10px;
+} 
+.browser-dot{
+    background-color:black;  
+    height:15px;
+    width:15px;
+    border-radius:50% ; 
+    margin:5px;
+
+    /*box shadow*/
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.9); 
+
+}
+
+/*dot-color */ 
+#dot-1{
+    background-color:#e94037;
+}
+#dot-2{
+    background-color: #f3b420;
+}
+#dot-3{
+    background-color: #1ab92f;
 }
 
 /*left-column*/
