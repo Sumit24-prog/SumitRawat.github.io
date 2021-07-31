@@ -207,14 +207,12 @@ h6{ font-size: 16px; }
 /*navigation*/
 #navigation {
     margin:0;
-    padding: 10px;
+    padding: 0;
 }
 
 /*navigation li*/
 #navigation li{ 
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
 } 
 
 #head5{
@@ -357,6 +355,32 @@ h6{ font-size: 16px; }
     -moz-box-shadow: 14px 31px 17px 1px rgba(0,0,0,0.75);
 }
 
+#button-read{
+    height:40px;
+    padding:10px;
+    margin-left:105px; 
+    background-color:var(--navigColor);
+    border: 1px solid var(--borderColor);
+    color:var(--mainText);
+    font-size:16px;
+    box-shadow: -5px 2px 5px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 2px 5px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 2px 5px 3px rgba(0,0,0,0.75);
+}
+#button-read:hover{
+    height:40px;
+    padding:10px;
+    margin-left:105px; 
+    background-color:var(--mainText);
+    border: 1px solid var(--navigColor);
+    color:var(--navigColor);
+    font-size:18px;
+    text-align:center;
+    box-shadow: -5px 2px 5px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -5px 2px 5px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 2px 5px 3px rgba(0,0,0,0.75);
+}
+
 /*message box preview*/
 #preview{
     width: 300px;
@@ -406,6 +430,25 @@ h6{ font-size: 16px; }
 
 #What-i{
     color:black;
+}
+
+.home-social{
+    width:180px;
+    padding-right:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background-color:white;
+} 
+.home-github{
+    width:30px;
+    font-size:30px;
+    margin:10px;
+    color:black;
+}
+.home-linkdin{
+    width:30px;
+    margin:10px;
+    font-size:30px;
 }
 
 /*responsive*/
