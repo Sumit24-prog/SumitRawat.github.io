@@ -11,15 +11,18 @@
     --themeDotBorder:#a6c4e2; 
     --previewBg: #868585bb;
     --previewShadow: #636363cc;
+
+    --navigColor: rgb(252, 32, 32);
+    --navigText:rgb(255, 255, 255);
+    --bodyColor:rgb(252, 32, 32);
 }  
 
 /*body*/
-html,body{
-    padding: 0;
-    margin: 0; 
-
-}  
-
+body{
+    margin:0;
+    padding: 0px;  
+    background-color:var(--bodyColor);
+} 
 /* all link of home,about,etc */
 a{
     text-decoration: none;  
@@ -47,8 +50,87 @@ h2{ font-size: 36px; }
 h3{ font-size: 28px; }
 h4{ font-size: 24px; }
 h5{ font-size: 20px; }
-h6{ font-size: 16px; }    
+h6{ font-size: 16px; }     
 
+/*Navigation */
+.navi-bar{ 
+    margin: 0; 
+    font-size:20px;
+    color:var(--navigText); 
+    margin-left:300px;
+    display: grid;
+    padding:0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
+    grid-column-gap:8px;
+    grid-template-areas:
+    'home-nav''About-nav''Projects-nav''Services-nav''Contact-nav '' ';
+}
+.home-nav{
+    width:100px;
+    height:40px;
+    padding-top:20px;
+    background-color:var(--navigColor);
+    border-radius: 0px 0px 10px 10px;
+}
+.home-nav:hover{
+    width:100px;
+    height:40px;
+    padding-top:60px;
+    background-color:var(--navigColor);
+    border-radius: 0px 0px 10px 10px;
+}
+.About-nav{
+    width:100px;
+    height:40px;
+    padding-top:20px;
+    border-radius: 0px 0px 10px 10px;
+}
+.About-nav:hover{
+    width:100px;
+    height:40px;
+    padding-top:60px;
+    background-color:var(--navigColor);
+    border-radius: 0px 0px 10px 10px;
+}
+.Projects-nav{
+    width:100px;
+    height:40px;
+    padding-top:20px;
+    border-radius: 0px 0px 10px 10px;
+}
+.Projects-nav:hover{
+    width:100px;
+    height:40px;
+    padding-top:60px;
+    background-color:var(--navigColor);
+    border-radius: 0px 0px 10px 10px;
+}
+.Services-nav{
+    width:100px;
+    height:40px;
+    padding-top:20px;
+    border-radius: 0px 0px 10px 10px;
+}
+.Services-nav:hover{
+    width:100px;
+    height:40px;
+    padding-top:60px;
+    background-color:var(--navigColor);
+    border-radius: 0px 0px 10px 10px;
+}
+.Contact-nav{
+    width:100px;
+    height:40px;
+    padding-top:20px;
+    border-radius: 0px 0px 10px 10px;
+}
+.Contact-nav:hover{
+    width:100px;
+    height:40px;
+    padding-top:60px;
+    background-color:var(--navigColor);
+    border-radius: 0px 0px 10px 10px;
+}
 /*only sections -1*/
 #profile{
     background-color:var(--mainColor);
@@ -337,17 +419,111 @@ h6{ font-size: 16px; }
     .main-container{
         height:auto;
     } 
+    body{ 
+        background-color:var(--bodyColor);
+    }
     .s1{
+
         background-size:auto ;
     }
-    .intro-wrapper{ 
+    .right-column{
+        background-color:var(--bodyColor);
+    }
+    .navi-bar{ 
+        position:absolute;
+        margin: 0; 
+        font-size:16px;
+        color:var(--navigText); 
+        margin-left:25px;
+        display: grid;
+        padding:0;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 6fr;
+        grid-column-gap:2px;
+        grid-template-areas:
+        'home-nav''About-nav''Projects-nav''Services-nav''Contact-nav '' ';
+    }
+    .home-nav{
+        width:80px; 
+        height:20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    .home-nav:hover{
+        width:80px;
+        height: 20px;
+        padding-top:20px;
+        padding-bottom: 10px;
+    }
+    .About-nav{ 
+        width:80px;
+        height:20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    .About-nav:hover{
+        width:80px;
+        height: 20px;
+        padding-top:20px;
+        padding-bottom: 10px;
+    }
+    .Projects-nav{
+        width:80px;
+        height:20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    .Projects-nav:hover{
+        width:80px;
+        height: 20px;
+        padding-top:20px;
+        padding-bottom: 10px;
+    }
+    .Services-nav{
+        width:80px;
+        height:20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    .Services-nav:hover{
+        width:80px;
+        height: 20px;
+        padding-top:20px;
+        padding-bottom: 10px;
+    }
+    .Contact-nav{
+        width:80px;
+        height:20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    .Contact-nav:hover{
+        width:80px;
+        height: 20px;
+        padding-top:20px;
+        padding-bottom: 10px;
+    }
+    .intro-wrapper{  
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas:
+        'navi-bar' 
         'nav-wrapper'
         'left-column'
         'right-column';
     }  
     .right-column{
         justify-content: center;
+    } 
+    #profile{
+        background-size:550px 500px;
+    } 
+    #profile-pic{
+        border-radius:50px 50px 50px 50px; 
+        /*box shadow*/
+    box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
     }
+    .text{
+        font-size: 19px;
+    } 
 }
