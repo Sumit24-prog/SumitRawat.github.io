@@ -20,7 +20,7 @@
 /*body*/
 body{
     margin:0;
-    padding: 0px;  
+    padding: 0;
     background-color:var(--bodyColor);
 } 
 /* all link of home,about,etc */
@@ -141,13 +141,13 @@ h6{ font-size: 16px; }
 }   
 
 .s1{
-    background-color:var(--mainColor);
-    border-bottom:var(--borderColor);
+    background-color:var(--mainColor); 
+    border:0px solid #fff;
 }
 
 /*only sections -2*/
 .s2{
-    background-color:var(--secondaryColor);
+    background-color:green;
     border-bottom:var(--borderColor);
 }   
 
@@ -433,28 +433,58 @@ h6{ font-size: 16px; }
 }
 
 .home-social{
-    width:140px;
+    width:150px;
+    margin:0;
+    padding:0;
     padding-right:20px;
     display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    background-color:white;
+    grid-template-columns:1fr 1fr 1fr; 
+    column-gap: 5px;
+    background-color:rgba(255, 255, 255, 0.74);
 } 
 .home-github{
     width:30px;
     font-size:30px;
-    margin:10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding:10px;
     color:black;
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 0 0 10px 10px;
 }
+/* .home-github:hover{
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 0 0 10px 10px;
+} */
 .home-gmail{
     width:30px;
-    margin:10px;
+    margin:0px;
+    margin-bottom: 5px;
+    padding:10px;
     font-size:30px;
     color:red;
 }
+.home-gmail:hover{
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 0 0 10px 10px;
+}
 .home-linkdin{
     width:30px;
-    margin:10px;
+    margin:0px;
+    margin-bottom: 5px;
+    padding:10px;
     font-size:30px;
+}
+.home-linkdin:hover{
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 0 0 10px 10px;
+}
+
+
+.about-me{
+    width:auto;
+    height:auto;
+    margin: 0;
 }
 
 /*responsive*/
@@ -464,24 +494,25 @@ h6{ font-size: 16px; }
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:768px){
     .main-container{
         height:auto;
+        width:auto;
     } 
     body{ 
         background-color:var(--bodyColor);
     }
     .s1{
-
-        background-size:auto ;
+        background-size:250px 400px ;
     }
     .right-column{
         background-color:var(--bodyColor);
     }
-    .navi-bar{ 
+    .navi-bar{  
+        min-width:250px;
         position:absolute;
         margin: 0; 
-        font-size:16px;
+        font-size:10px;
         color:var(--navigText); 
         margin-left:25px;
         display: grid;
@@ -492,61 +523,61 @@ h6{ font-size: 16px; }
         'home-nav''About-nav''Projects-nav''Services-nav''Contact-nav '' ';
     }
     .home-nav{
-        width:80px; 
+        width:50px;
         height:20px;
         padding-top:10px;
         padding-bottom: 10px;
     }
     .home-nav:hover{
-        width:80px;
+        width:50px;
         height: 20px;
         padding-top:20px;
         padding-bottom: 10px;
     }
     .About-nav{ 
-        width:80px;
+        width:50px;;
         height:20px;
         padding-top:10px;
         padding-bottom: 10px;
     }
     .About-nav:hover{
-        width:80px;
+        width:50px;;
         height: 20px;
         padding-top:20px;
         padding-bottom: 10px;
     }
     .Projects-nav{
-        width:80px;
+        width:50px;
         height:20px;
         padding-top:10px;
         padding-bottom: 10px;
     }
     .Projects-nav:hover{
-        width:80px;
+        width:50px;
         height: 20px;
         padding-top:20px;
         padding-bottom: 10px;
     }
     .Services-nav{
-        width:80px;
+        width:50px;
         height:20px;
         padding-top:10px;
         padding-bottom: 10px;
     }
     .Services-nav:hover{
-        width:80px;
+        width:50px;
         height: 20px;
         padding-top:20px;
         padding-bottom: 10px;
     }
     .Contact-nav{
-        width:80px;
+        width:50px;
         height:20px;
         padding-top:10px;
         padding-bottom: 10px;
     }
     .Contact-nav:hover{
-        width:80px;
+        width:50px;
         height: 20px;
         padding-top:20px;
         padding-bottom: 10px;
