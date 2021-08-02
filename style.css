@@ -14,18 +14,26 @@
 
     --navigColor: rgb(252, 32, 32);
     --navigText:rgb(255, 255, 255);
-    --bodyColor:rgb(252, 32, 32);
+    --bodyColor:rgb(255, 255, 255); 
+
+    /*color that will not changed */
+    --blueColor:#17a2b8;
+    --whiteColor:#fff; 
+    --dotColor: black;
+    --socialColor:rgba(255, 255, 255, 1);
+    --backSocialColor:rgba(255, 255, 255,0.74);
 }  
 
 /*body*/
 body{
     margin:0;
-    padding: 0;
+    padding: 0; 
+    color:var(--bodyColor);
 } 
 /* all link of home,about,etc */
 a{
     text-decoration: none;  
-    color:#17a2b8;;
+    color:var(--blueColor);
 }  
 
 /*all heading*/
@@ -146,7 +154,7 @@ h6{ font-size: 16px; }
 
 .s1{
     background-color:var(--mainColor); 
-    border:0px solid #fff;
+    border:0px solid var(--whiteColor);
 }
 
 /*only sections -2*/
@@ -233,7 +241,7 @@ h6{ font-size: 16px; }
     padding:10px;
 } 
 .browser-dot{
-    background-color:black;  
+    background-color:var(--dotcolor);  
     height:15px;
     width:15px;
     border-radius:50% ; 
@@ -317,7 +325,7 @@ h6{ font-size: 16px; }
 
 /*light-mod setting*/
 #light-mode{
-    background-color: #fff;
+    background-color: var(--whiteColor);
 }
 
 /*blue-mode setting*/
@@ -408,7 +416,7 @@ h6{ font-size: 16px; }
     width:7px;
     height: 7px;
     border-radius: 50%;
-    border: 1.5px solid #fff;
+    border: 1.5px solid var(--whiteColor);
     background-color:#161515;
     position:absolute;
 }
@@ -445,6 +453,7 @@ h6{ font-size: 16px; }
 } 
 p{ 
     margin:20px;
+    letter-spacing: 0.2px;
 }
 
 .home-social{
@@ -455,7 +464,7 @@ p{
     display:grid;
     grid-template-columns:1fr 1fr 1fr; 
     column-gap: 5px;
-    background-color:rgba(255, 255, 255, 0.74);
+    background-color:var(--backSocialColor);
 } 
 .home-github{
     width:30px;
@@ -464,7 +473,7 @@ p{
     margin-bottom: 5px;
     padding:10px;
     color:black;
-    background-color:rgba(255, 255, 255, 1);
+    background-color:var(--socialColor);
     border-radius: 0 0 10px 10px;
 }
 /* .home-github:hover{
@@ -480,7 +489,7 @@ p{
     color:red;
 }
 .home-gmail:hover{
-    background-color:rgba(255, 255, 255, 1);
+    background-color:var(--socialColor);
     border-radius: 0 0 10px 10px;
 }
 .home-linkdin{
@@ -491,7 +500,7 @@ p{
     font-size:30px;
 }
 .home-linkdin:hover{
-    background-color:rgba(255, 255, 255, 1);
+    background-color:var(--socialColor);
     border-radius: 0 0 10px 10px;
 }
 
