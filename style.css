@@ -74,15 +74,16 @@ h6{ font-size: 16px; }
     margin-left:300px;
     display: grid;
     padding:0px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap:0px;
     grid-template-areas:
-    'home-nav''About-nav''Projects-nav''Services-nav''Contact-nav '' ';
+    'home-nav''About-nav''Projects-nav''Contact-nav ';
 }
 .home-nav{
     width:100px;
     height:40px;
     padding-top:20px;
+    cursor: pointer;
     background-color:var(--navigColor);
     border-radius: 0px 0px 10px 10px;
 }
@@ -90,17 +91,20 @@ h6{ font-size: 16px; }
     width:100px;
     height:40px;
     padding-top:60px;
-    background-color:var(--navigColor);
+    background-color:var(--navigColor); 
+    cursor: pointer;
     border-radius: 0px 0px 10px 10px;
 }
 .About-nav{
     width:100px;
     height:40px;
+    cursor: pointer;
     padding-top:20px;
     border-radius: 0px 0px 10px 10px;
 }
 .About-nav:hover{
     width:100px;
+    cursor: pointer;
     height:40px;
     padding-top:60px;
     background-color:var(--navigColor);
@@ -109,6 +113,7 @@ h6{ font-size: 16px; }
 .Projects-nav{
     width:100px;
     height:40px;
+    cursor: pointer;
     padding-top:20px;
     border-radius: 0px 0px 10px 10px;
 }
@@ -116,6 +121,7 @@ h6{ font-size: 16px; }
     width:100px;
     height:40px;
     padding-top:60px;
+    cursor: pointer;
     background-color:var(--navigColor);
     border-radius: 0px 0px 10px 10px;
 }
@@ -123,10 +129,12 @@ h6{ font-size: 16px; }
     width:100px;
     height:40px;
     padding-top:20px;
+    cursor: pointer;
     border-radius: 0px 0px 10px 10px;
 }
 .Services-nav:hover{
     width:100px;
+    cursor: pointer;
     height:40px;
     padding-top:60px;
     background-color:var(--navigColor);
@@ -136,11 +144,13 @@ h6{ font-size: 16px; }
     width:100px;
     height:40px;
     padding-top:20px;
+    cursor: pointer;
     border-radius: 0px 0px 10px 10px;
 }
 .Contact-nav:hover{
     width:100px;
     height:40px;
+    cursor: pointer;
     padding-top:60px;
     background-color:var(--navigColor);
     border-radius: 0px 0px 10px 10px;
@@ -189,7 +199,7 @@ h6{ font-size: 16px; }
     height:550px; 
     /* border-bottom: 105px solid var(--borderColor);  */
     border-radius:5px 5px 5px 5px ; 
-
+    backdrop-filter: blur(2px);
     /*box shadow*/
     box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
