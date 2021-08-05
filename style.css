@@ -65,13 +65,13 @@ h6{ font-size: 16px; }
 
 /*Navigation */
 .navi-bar{  
-    width:540px;
+    width:450px;
     height:100px;
     margin-top: 0px; 
     margin-bottom:5px;
     font-size:20px;
     color:var(--navigText); 
-    margin-left:300px;
+    margin-left:350px;
     display: grid;
     padding:0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
