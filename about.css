@@ -9,14 +9,16 @@ section{
     justify-content:center;
     align-items:center;
     min-height:100vh;
-    background-image: url(./images/snow.png);
+    background:#9c7c7c;
+    /* background-image: url(./images/snow.png); */
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-}  
+} 
 .container{
-    top:40px;
-    position: relative;
+    top:70px;
+    left: 68px;
+    position: absolute;
     width: 80vw;
     margin-left: 2vw;
     height: 68vh;
@@ -48,7 +50,7 @@ header{
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 header .logo{
-    color:#8704a8;
+    color:#ff0000;
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
@@ -63,16 +65,17 @@ header ul li{
 header ul li  a{
     text-decoration: none;
     font-weight:600;
-    color:#8a2435;
+    color:#ff0000;
     padding:8px 15px;
     border-radius: 25px;
 }
 header ul li .About{
-    background:rgb(255, 255, 255);
+    background:rgb(231, 227, 227); 
+    color:rgb(255, 0, 0);
     box-shadow: 0 5pxx 10px rgba(0,0,0,0.1);
 }
 header ul li a:hover{
-    background:#fff;
+    background:rgb(255, 255, 255);
     box-shadow: 0 5pxx 10px rgba(0,0,0,0.1);
 }
 
@@ -92,18 +95,23 @@ header ul li a:hover{
 .content h2
 {
     font-size: 3em;
-    color:#8a2435;
-}
+    font-weight: 400;
+    color:#ff0000;
+} 
 .content p
 {
-    font-size: 1.2em;
-    color:#8a2435;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+    color:#ff0000;
+    word-spacing: 0.1em;
 } 
 .content a{
     display: inline-block;
     padding:15px 30px;
-    background: #fff;
-    color:#8a2435;
+    background: rgb(209, 209, 209);
+    color:#ff0000;
     margin-top:20px;
     border-radius:30px;
     font-weight: 500;
@@ -138,21 +146,22 @@ header ul li a:hover{
 }
 .sci li a{ 
     text-decoration: none;
-    width:55px;
-    height:55px;
-    background:#fff; 
-    display: flex;
+    width:60px;
+    height:60px;
+    background:rgba(253, 249, 249, 0.37); 
+    border-radius: 90%;
+    /* display: flex;
     justify-content:center;
     align-items:center; 
     margin: 5px 0;
     border-radius:50%;
-    box-shadow:0 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow:0 5px 10px rgba(0, 0, 0, 0.5); */
 
 } 
 .sci li a img{
     transform:scale(0.6);
     transition: 0.5s;
 }
-.sci li:hover a img{
+.sci li:hover a img{ 
     transform:scale(0.6) rotate(360deg);
-}
+} 
