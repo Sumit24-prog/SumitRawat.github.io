@@ -58,25 +58,35 @@ header .logo{
 header  ul{
     display: flex;
 }
-header ul li{
+header ul li{ 
     list-style: none;
     margin: 0 10px;
 }
-header ul li  a{
+header ul li  a{ 
+    width:100px; 
+    height:50px;
     text-decoration: none;
     font-weight:600;
+    padding: 10px;
     color:#ff0000;
-    padding:8px 15px;
     border-radius: 25px;
 }
 header ul li .About{
-    background:rgb(231, 227, 227); 
+    width:100px; 
+    height:30px;
+    background:rgb(255, 255, 255); 
     color:rgb(255, 0, 0);
-    box-shadow: 0 5pxx 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-header ul li a:hover{
+header ul li a:hover{ 
+    width:100px; 
+    height:30px;
+    background:rgb(255, 255, 255); 
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+header ul li:hover{ 
     background:rgb(255, 255, 255);
-    box-shadow: 0 5pxx 10px rgba(0,0,0,0.1);
 }
 
 .content{
@@ -89,6 +99,7 @@ header ul li a:hover{
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     padding:40px; 
+    -webkit-text-stroke: 0.004vw #ffffff;
     padding-left: 110px;
     margin-top: 50px;
 }
@@ -96,11 +107,39 @@ header ul li a:hover{
 {
     font-size: 3em;
     font-weight: 400;
-    color:#ff0000;
-} 
+    color:#ffffff;
+    -webkit-text-stroke: 0.14vw #f7f7f7;
+    letter-spacing:0.2vw;
+}  
+
+.content h2::before{
+	content: attr(data-text);
+	position: absolute;
+    top: 80px; 
+    left:110px;
+    padding:0px;
+    margin:0px;
+    white-space: nowrap;
+	width: 560px;
+	height: 60px;
+	color: #ff0000;
+    -webkit-text-stroke: 0.08vw #ffffff;
+	border-right: 2px solid #fe0101;
+	overflow: hidden;
+	animation: ani 8s linear infinite;
+}
+@keyframes ani{
+	0%,10%,100%{ 
+		width: 0; 
+	}
+	70%,90%{
+		width: 78%;
+	}
+}
+
 .content p
 {
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     line-height: 1.5em;
