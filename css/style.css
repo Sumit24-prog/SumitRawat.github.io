@@ -159,7 +159,7 @@ h6{ font-size: 16px; }
 #profile{
     background-color:var(--mainColor);
     border-bottom:var(--borderColor); 
-    background-image:url("images/Background.jpg") ;
+    background-image:url("../images/Background.jpg") ;
     background-repeat: no-repeat;
     background-size: 1500px 800px; 
 }   

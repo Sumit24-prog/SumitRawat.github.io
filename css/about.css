@@ -10,7 +10,7 @@ section{
     align-items:center;
     min-height:100vh;
     background:#9c7c7c;
-    /* background-image: url(./images/snow.png); */
+    /* background-image: url(../images/snow.png); */
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
