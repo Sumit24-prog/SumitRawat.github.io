@@ -21,7 +21,7 @@ section{
     position: absolute;
     width: 80vw;
     margin-left: 2vw;
-    height: 68vh;
+    height: 72vh;
     background:rgba(255, 255, 255, 0.2);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border-radius:20px;
@@ -98,7 +98,7 @@ header ul li:hover{
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    padding:40px; 
+    padding:20px; 
     padding-left: 110px; 
     margin-top: 50px;
 } 
@@ -108,55 +108,47 @@ header ul li:hover{
     line-height:4vw;
 }
 .hidden{
-    top: 130px;
-	left: 200px;
+    top: 110px;
+	left: 290px;
 	position: absolute;
 	width: 60vw;
 	overflow: hidden;
-	height: 6vh;
+	height: 7.5vh;
 }  
 .first{
 	top: 0px;
-	width: 40vw;
+	width: 24vw;
 	left: 0px;
 	position: absolute;
 	font-size: 3vw;
 	color: transparent;
-    color:#fff;
-	text-transform: uppercase;
 	animation:slide 24s steps(1) infinite;
 } 
 .second{
 	top: 50px;
-	width: 38vw;
+	width: 25vw;
 	left: 0px;
 	position: absolute;
 	font-size: 3vw;
-	color: transparent;
-	-webkit-text-stroke: 0.08vw #fff;
-	text-transform: uppercase;
+	color:transparent;
 	animation:slide 24s steps(1) infinite;
 }
 .third{
 	top: 100px;
-	width: 35vw;
+	width: 22vw;
 	left: 0px;
 	position: absolute;
 	font-size: 3vw;
-	color: transparent;
-	-webkit-text-stroke: 0.08vw #fff;
-	text-transform: uppercase;
+	color:transparent;
 	animation:slide 24s steps(1) infinite;
 }
 .fourth{
 	top: 150px;
-	width: 33vw;
+	width: 20vw;
 	left: 0px;
 	position: absolute;
 	font-size: 3vw;
-	color: transparent;
-	-webkit-text-stroke: 0.08vw #fff;
-	text-transform: uppercase;
+	color:transparent;
 	animation:slide 24s steps(1) infinite;
 }
 @keyframes slide{
@@ -247,16 +239,19 @@ header ul li:hover{
     line-height: 1.5em;
     color:#ff0000;
     word-spacing: 0.1em;
+}
+h3{
+    font-size:1.3em;
+    color:#ff0000;
 } 
 .content a{
-    display: inline-block;
-    padding:15px 30px;
-    background: rgb(209, 209, 209);
+    background: transparent;
     color:#ff0000;
-    margin-top:20px;
+    margin-top:0px;
     border-radius:30px;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: none; 
+    margin-left:10px;
     box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);
 }
 .imgbx img{
@@ -267,10 +262,10 @@ header ul li:hover{
 } 
 @keyframes animate{
     0%,100%{
-        transform:translateY(-40px);
+        transform:translateY(-60px);
     }
     50%{
-        transform:translateY(50px);
+        transform:translateY(40px);
     }
 }
 .sci{
