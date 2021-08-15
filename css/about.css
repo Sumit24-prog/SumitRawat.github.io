@@ -9,7 +9,7 @@ section{
     justify-content:center;
     align-items:center;
     min-height:100vh;
-    background:#9c7c7c;
+    background:#deadff;
     /* background-image: url(../images/snow.png); */
     background-repeat: no-repeat;
     background-size: cover; 
@@ -22,11 +22,12 @@ section{
     width: 80vw;
     margin-left: 2vw;
     height: 72vh;
-    background:rgba(255, 255, 255, 0.2);
+    background:rgba(255, 255, 255, 0.1);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border-radius:20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,19 +39,21 @@ header{
     right:20px;
     left:20px;
     padding: 20px 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(0,0,0, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 header .logo{
-    color:#ff0000;
+    grid-area: 1/1/2/2;
+    color:#6c00c5;
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
@@ -68,15 +71,22 @@ header ul li  a{
     text-decoration: none;
     font-weight:600;
     padding: 10px;
-    color:#ff0000;
+    color:#6c00c5;
     border-radius: 25px;
+} 
+.container header ul li .gr1{
+    grid-area: 1/2/2/3;
 }
-header ul li .About{
+.container header ul li .gr2{
+    grid-area: 1/3/2/4;
     width:100px; 
     height:30px;
     background:rgb(255, 255, 255); 
-    color:rgb(255, 0, 0);
+    color:#6c00c5;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.container header ul li .gr3{
+    grid-area: 1/4/2/5;
 }
 header ul li a:hover{ 
     width:100px; 
@@ -85,48 +95,45 @@ header ul li a:hover{
     border-radius: 25px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-header ul li:hover{ 
-    background:rgb(255, 255, 255);
-}
-
 .content{
     transform: translateX(-100px);
     max-width: 700px; 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(0,0,0, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     padding:20px; 
+    height: 60vh;
     padding-left: 110px; 
     margin-top: 50px;
 } 
 .content h2{
-    font-size:3vw;
-    color:#ff0000; 
+    font-size:2.2vw;
+    color:#6c00c5; 
     line-height:4vw;
 }
 .hidden{
-    top: 110px;
-	left: 290px;
-	position: absolute;
+    top: 0;
+	left: 0;
+	position: relative;
 	width: 60vw;
 	overflow: hidden;
-	height: 7.5vh;
+	height: 7.9vh;
 }  
 .first{
 	top: 0px;
-	width: 24vw;
-	left: 0px;
+	width: 25vw;
+	left: 0px; 
 	position: absolute;
 	font-size: 3vw;
 	color: transparent;
 	animation:slide 24s steps(1) infinite;
 } 
 .second{
-	top: 50px;
-	width: 25vw;
+	top: 80px;
+	width: 26vw;
 	left: 0px;
 	position: absolute;
 	font-size: 3vw;
@@ -134,8 +141,8 @@ header ul li:hover{
 	animation:slide 24s steps(1) infinite;
 }
 .third{
-	top: 100px;
-	width: 22vw;
+	top: 160px;
+	width: 23vw;
 	left: 0px;
 	position: absolute;
 	font-size: 3vw;
@@ -143,7 +150,7 @@ header ul li:hover{
 	animation:slide 24s steps(1) infinite;
 }
 .fourth{
-	top: 150px;
+	top: 240px;
 	width: 20vw;
 	left: 0px;
 	position: absolute;
@@ -156,13 +163,13 @@ header ul li:hover{
 		transform: translateY(0px);
 	}
 	25%{
-		transform: translateY(-50px);
+		transform: translateY(-80px);
 	}
 	50%{
-		transform: translateY(-100px);
+		transform: translateY(-160px);
 	}
 	75%{
-		transform: translateY(-150px);
+		transform: translateY(-240px);
 	}
 }
 
@@ -233,23 +240,25 @@ header ul li:hover{
 
 .content p
 {
-    font-size: 1.1em;
+    font-size: 1.1vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
-    line-height: 1.5em;
-    color:#ff0000;
-    word-spacing: 0.1em;
+    line-height: 2.1vw;
+    color:#6c00c5;
+    word-spacing: 0.1vw;
 }
 h3{
     font-size:1.3em;
-    color:#ff0000;
+    color:#6c00c5;
 } 
 .content a{
     background: transparent;
-    color:#ff0000;
+    color:#6c00c5;
+    height:60px;
     margin-top:0px;
     border-radius:30px;
     font-weight: 500;
+    border:1px solid rgba(255, 255, 255, 0.5);
     text-decoration: none; 
     margin-left:10px;
     box-shadow:0 5px 10px rgba(0, 0, 0, 0.1);
@@ -265,7 +274,7 @@ h3{
         transform:translateY(-60px);
     }
     50%{
-        transform:translateY(40px);
+        transform:translateY(38px);
     }
 }
 .sci{
@@ -286,12 +295,13 @@ h3{
     height:60px;
     background:rgba(253, 249, 249, 0.37); 
     border-radius: 90%;
+    border:1px solid rgba(255, 255, 255, 0.5);
     /* display: flex;
     justify-content:center;
     align-items:center; 
     margin: 5px 0;
     border-radius:50%;
-    box-shadow:0 5px 10px rgba(0, 0, 0, 0.5); */
+    box-shadow:0 5px 10px rgba(255, 255, 255, 0.5); */
 
 } 
 .sci li a img{
@@ -301,3 +311,152 @@ h3{
 .sci li:hover a img{ 
     transform:scale(0.6) rotate(360deg);
 } 
+@media screen and (max-width: 1200px){
+    .imgbx img {
+        position: absolute;
+        top:5vh ;
+        height: 70vh;
+        left: 62vw;
+    }
+    .content{
+        width: 54vw;
+    }
+    .container{
+        width: 75vw;
+    } 
+    .container header{
+        width: 70vw;
+    }
+    .sci{
+        left: 91vw;
+    }
+}
+
+@media screen and (max-width: 768px){ 
+    .imgbx img {
+        left: 30vw;
+        position: absolute;
+        width: 25vw;
+        top: 65vw;
+        height: 70vh;
+        animation: animate 5s linear infinite;
+    }
+    section{
+        height: 164vh;
+    }
+    .sci li {
+        margin-left:1vw ;
+    }
+    .container{
+        width: 70vw;
+        height: 130vh;
+    }
+    .content{
+        position: absolute;
+        top: 5vh;
+        left: 15vw;
+        width: 70vw;
+        padding-left: 6vw;
+        margin-left: 3vh;
+    }
+    .content h2{
+        margin-right: 20vw; 
+        margin-top:2vw;
+        width:43vw; 
+        font-size: 4vw;
+        margin-bottom: 0;
+    } 
+    .content h3{
+        margin-bottom: 1vw;
+    }
+    .hidden{
+        height: 7vw;
+    }
+    .hidden .first,.hidden .second,.hidden .third,.hidden .fourth{
+        margin-top: 2vw;
+        font-size: 5vw; 
+        width: 45vw;
+        height: 7vw;
+    }
+    .content p{
+        font-size: 1.7vw;
+    }
+    .container header{
+        width: 64vw;
+    }
+    .container header .logo{ 
+        font-size: 3.4vw;
+
+    }
+    .sci{
+        flex-direction: row;
+        top:148vh ;
+        margin: 0vw;
+        left: 10vw;
+    }
+}
+@media screen and (max-width: 682px){
+    .container{
+        top: 10vh;
+        left: 5vw;
+    }
+    .container header ul{
+    width:50vw ;
+    padding-left: 1vw; 
+    font-size: 2.5vw;
+    }
+    .imgbx img{
+        top: 80vw;
+        left: 25vw;
+        width: 40vw;
+        height: 60vh;
+    } 
+    .hidden{
+        font-size: 2vw;
+    }
+} 
+@media screen and (max-width: 600px)
+{ 
+    .content{
+        width: 74.5vw;
+    }
+    .content p{
+        font-size: 14px;
+        line-height: 1.5em;
+    } 
+    .imgbx img{
+        top: 90vw;
+    }
+}
+@media screen and (max-width: 560px)
+{
+    .content{
+        margin-left: 5vw;
+    } 
+    .content{
+        width:78vw ;
+        margin-left: calc(100% - 84.5vw);
+    }
+    .container{
+        position: absolute;
+        top: 10vh;
+        left: 3px;
+    } 
+    .imgbx img{
+        top: calc(100% - 87vw);
+    }
+    .container header{
+        width: 70vw;
+        padding: 20px calc(100% - 85vw);
+    }
+}
+@media screen and (max-width: 440px)
+{
+    .container{
+       width: 68vw;
+    }
+    .container header ul li{
+        width: 10vw;
+    }
+
+}

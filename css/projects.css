@@ -173,7 +173,7 @@ section .color
     width:4px;
     height:60px;
     z-index: 12;
-    background: #fffb00;
+    background: #7802ff;
     border-radius: 6px;
 }
 .sc::before{
@@ -186,7 +186,7 @@ section .color
     width:2px;
     height:80px;
     z-index: 13;
-    background: #ff0000;
+    background: #6c00c5;
     border-radius: 6px;
 }
 
@@ -196,7 +196,7 @@ section .content .proj{
     height:200px;
     position:absolute;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(255, 255, 255);
+    color:#6c00c5;
     background: rgba(255, 255, 255, 0.411);
     font-size:1em;
     backdrop-filter: blur(5px);
@@ -209,12 +209,12 @@ section .content .show-case{
     top:50px;
     height:500px;
     width: 300px;
-    color:rgb(255, 0, 0);
-    background:rgb(255, 229, 229);
+    color:#6c00c5;
+    background:#c0a0db;
     left:150px; 
-    box-shadow: 20px 20px 0px rgba(255, 235, 235, 0.5);
+    box-shadow: 20px 20px 0px rgba(128, 86, 177, 0.5);
     padding:30px 40px; 
-    border:0px solid red;
+    border:0px solid #6c00c5;
     z-index:2001;
 } 
 section .content .show-case h2{
@@ -222,7 +222,7 @@ section .content .show-case h2{
 } 
 section .content .show-case input{
     margin:10px 10px;
-    background: #ff0000;
+    background: #6c00c5;
     width:100px;
     color:#fff;
     margin-top:20px;
@@ -231,8 +231,8 @@ section .content .show-case input{
     border:none;
 } 
 section .content .show-case input:hover{
-    color:#ff0000; 
-    border:1px solid rgb(255, 163, 163);
+    color:#6c00c5; 
+    border:1px solid rgb(162, 0, 255);
     background: rgb(255, 255, 255);
 }
 section .content #pr1{
@@ -279,7 +279,7 @@ section .content .proj h2{
 
 section .content .proj input{
     border:none; 
-    color:#3a3939;
+    color:#6c00c5;
     background: #ffffff;
     
     margin:20px;
@@ -287,9 +287,9 @@ section .content .proj input{
     right:10px;
     padding:10px;
 }
-section .content .proj input:hover{
+section .content .proj input:hover,section .content .proj input:focus{
     color:#ffffff; 
-    background: rgb(61, 61, 61);
+    background: #6c00c5;
 }
 
 section .quotes{
@@ -308,7 +308,7 @@ section .quotes{
 section .quotes #qu1 {
     font-size:2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#ff0000;
+    color:#6c00c5;
 }
 section .quotes #qu2 {
     font-size:1.2em;
@@ -318,7 +318,7 @@ section .quotes #qu2 {
 section .quotes #qu3 {
     font-size:1.4em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#ff0000;
+    color:#6c00c5;
 }
 section .quotes #qu4 {
     font-size:1.2em;
@@ -328,7 +328,7 @@ section .quotes #qu4 {
 section .quotes #qu5 {
     font-size:1.4em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#ff0000;
+    color:#6c00c5;
 }
 section .quotes #qu6 {
     font-size:1.2em;
@@ -338,7 +338,7 @@ section .quotes #qu6 {
 section .quotes #qu7 {
     font-size:1.3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#ff0000;
+    color:#6c00c5;
 }
 section .quotes #qu8 {
     font-size:1.2em;
@@ -578,7 +578,7 @@ section .content .bar .br3{
     backdrop-filter: blur(250px);
     background:rgba(255,255,255,0.2);
     border-radius:0 10px 10px 0;
-    background:#ff0000;
+    background:#6c00c5;
 }
 section .content .bar .br4{
     padding:30px;
@@ -595,16 +595,16 @@ section .content .bar .br4{
 } 
 
 section .content .bar .br1:hover{
-    background: #ff0000;
+    background: #6c00c5;
 } 
 section .content .bar .br2:hover{
-    background: #ff0000;
+    background: #6c00c5;
 } 
 section .content .bar .br3:hover{
-    background: #ff0000;
+    background: #6c00c5;
 } 
 section .content .bar .br4:hover{
-    background: #ff0000;
+    background: #6c00c5;
 } 
 
 .Bar1{

@@ -76,8 +76,6 @@ h6{ font-size: 16px; }
     padding:0px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap:0px;
-    grid-template-areas:
-    'home-nav''About-nav''Projects-nav''Contact-nav ';
 }
 .home-nav{
     width:100px;
@@ -85,6 +83,7 @@ h6{ font-size: 16px; }
     padding-top:20px;
     cursor: pointer;
     background-color:var(--navigColor);
+    grid-area: 1/1/2/2;
     border-radius: 0px 0px 10px 10px;
 }
 .home-nav:hover{
@@ -92,14 +91,15 @@ h6{ font-size: 16px; }
     height:40px;
     padding-top:60px;
     background-color:var(--navigColor); 
-    cursor: pointer;
+    cursor: pointer; 
     border-radius: 0px 0px 10px 10px;
 }
 .About-nav{
     width:100px;
     height:40px;
     cursor: pointer;
-    padding-top:20px;
+    padding-top:20px;  
+    grid-area: 1/2/2/3;
     border-radius: 0px 0px 10px 10px;
 }
 .About-nav:hover{
@@ -114,7 +114,8 @@ h6{ font-size: 16px; }
     width:100px;
     height:40px;
     cursor: pointer;
-    padding-top:20px;
+    padding-top:20px; 
+    grid-area: 1/3/2/4;
     border-radius: 0px 0px 10px 10px;
 }
 .Projects-nav:hover{
@@ -125,26 +126,12 @@ h6{ font-size: 16px; }
     background-color:var(--navigColor);
     border-radius: 0px 0px 10px 10px;
 }
-.Services-nav{
-    width:100px;
-    height:40px;
-    padding-top:20px;
-    cursor: pointer;
-    border-radius: 0px 0px 10px 10px;
-}
-.Services-nav:hover{
-    width:100px;
-    cursor: pointer;
-    height:40px;
-    padding-top:60px;
-    background-color:var(--navigColor);
-    border-radius: 0px 0px 10px 10px;
-}
 .Contact-nav{
     width:100px;
     height:40px;
     padding-top:20px;
-    cursor: pointer;
+    cursor: pointer; 
+    grid-area: 1/4/2/5;
     border-radius: 0px 0px 10px 10px;
 }
 .Contact-nav:hover{
@@ -543,7 +530,7 @@ second page */
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:860px){
     .main-container{
         height:auto;
         width:auto;
@@ -552,107 +539,137 @@ second page */
         background-color:var(--bodyColor);
     }
     .s1{
-        background-size:250px 400px ;
-    }
-    .right-column{
-        background-color:var(--bodyColor);
-    }
+        background-size:auto;    }
     .navi-bar{  
         min-width:250px;
         position:absolute;
         margin: 0; 
-        font-size:10px;
+        font-size:2.7vw;
         color:var(--navigText); 
-        margin-left:25px;
+        margin-left:20vw;
         display: grid;
         padding:0;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 6fr;
         grid-column-gap:2px;
-        grid-template-areas:
-        'home-nav''About-nav''Projects-nav''Services-nav''Contact-nav '' ';
-    }
-    .home-nav{
-        width:50px;
-        height:20px;
-        padding-top:10px;
-        padding-bottom: 10px;
-    }
-    .home-nav:hover{
-        width:50px;
-        height: 20px;
-        padding-top:20px;
-        padding-bottom: 10px;
-    }
-    .About-nav{ 
-        width:50px;;
-        height:20px;
-        padding-top:10px;
-        padding-bottom: 10px;
-    }
-    .About-nav:hover{
-        width:50px;;
-        height: 20px;
-        padding-top:20px;
-        padding-bottom: 10px;
-    }
-    .Projects-nav{
-        width:50px;
-        height:20px;
-        padding-top:10px;
-        padding-bottom: 10px;
-    }
-    .Projects-nav:hover{
-        width:50px;
-        height: 20px;
-        padding-top:20px;
-        padding-bottom: 10px;
-    }
-    .Services-nav{
-        width:50px;
-        height:20px;
-        padding-top:10px;
-        padding-bottom: 10px;
-    }
-    .Services-nav:hover{
-        width:50px;
-        height: 20px;
-        padding-top:20px;
-        padding-bottom: 10px;
-    }
-    .Contact-nav{
-        width:50px;
-        height:20px;
-        padding-top:10px;
-        padding-bottom: 10px;
-    }
-    .Contact-nav:hover{
-        width:50px;
-        height: 20px;
-        padding-top:20px;
-        padding-bottom: 10px;
-    }
+    } 
     .intro-wrapper{  
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        'navi-bar' 
-        'nav-wrapper'
-        'left-column'
-        'right-column';
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        width: 80vw;
+        height: 120vh; 
+        grid-template-columns: none;
+        margin: 10vw; 
+        margin-bottom: 0vw;
     }  
+    .nav-wrapper{
+        grid-area: 1/1/2/2; 
+        width: 80vw;
+    }
+    .left-column{
+        grid-area: 2/1/3/2; 
+        padding: 0px;
+    }
     .right-column{
         justify-content: center;
-    } 
+        grid-area: 3/1/4/2;
+        padding: 0;
+        height: 50vh;
+        margin: 10vw;
+    }
+
     #profile{
-        background-size:550px 500px;
+        background-size: auto 1600px;
     } 
     #profile-pic{
-        border-radius:50px 50px 50px 50px; 
+        border-radius :0; 
+        margin: 10vw 0 10vw 30vw;
         /*box shadow*/
-    box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
+        box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px -12px 10px 5px rgba(0,0,0,0.75);
     }
     .text{
-        font-size: 19px;
+        margin-top: 20vh; 
+        height: auto; 
+        font-size: 8.5vw;
     } 
-}
+} 
+@media screen and (max-width: 600px)
+{
+    .navi-bar{
+        width: 80vw; 
+        font-size: 3.7vw;
+        margin-left: 7vw;
+    }  
+    .nav-wrapper{
+        height: 14.7vw;
+    }
+    #preview-shadow{
+        width: 50vw;
+    } 
+    #preview{
+        width: 50vw;
+    }
+    #profile-pic{
+        margin: 10vw;
+    } 
+    #button-read,#button-read:hover{
+        margin-left: 10vw;
+    } 
+    .intro-wrapper{
+        margin: 0 10vw; 
+        height: 60em;
+    }
+    .right-column{
+        margin-left: 0px;
+    }
+    .home-social{
+        width: 40vw; 
+        height: 14.7vw;
+    } 
+    .home-github{
+        width: 10vw;  
+        max-height: 14.7vw;
+        padding: 0vw;
+        padding-top: 4vw;
+        padding-left: 1.5vw;
+    }
+    .home-linkdin{
+        width: 10vw;  
+        max-height: 14.7vw;
+        padding: 0vw;
+        padding-top: 4vw;
+        padding-left: 1.5vw;
+    }
+    .home-gmail{
+        width: 10; 
+        max-height: 14.7vw;
+        padding: 0vw; 
+        padding-top: 4vw;
+        padding-left: 1.5vw;
+    }
+    .greeting-wrapper{
+        height: 47vw; 
+        min-height: 47vw;
+    } 
+    .greeting-wrapper .navi-bar{
+        height: 20vw;
+    }
+    .greeting-wrapper .navi-bar a{
+        width: 20vw;
+        height: 10vw;
+    } 
+    .text{
+        margin-top: 10vw;
+    } 
+    .home-nav:hover{
+        padding-top: 14vw;
+    }
+    .About-nav:hover{
+        padding-top: 14vw;
+    }
+    .Projects-nav:hover{
+        padding-top: 14vw;
+    }
+    .Contact-nav:hover{
+        padding-top: 14vw;
+    }
+} 
