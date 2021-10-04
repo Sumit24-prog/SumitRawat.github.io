@@ -1,7 +1,7 @@
 # SumitRawat.github.io
 
 
-It is My portfolio all about me here is the first page(here)[https://sumit24-prog.github.io/SumitRawat.github.io/]
+It is My portfolio all about me here is the first page [here](https://sumit24-prog.github.io/SumitRawat.github.io/)
 
 
 ![ALt text](./images/oc2.JPG?raw=true "Front Page")
