@@ -45,7 +45,7 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    background: rgba(0, 0, 0, 0.877);
+    background: #7802ff9e;
 }
 body{
 	overflow: hidden;
@@ -312,7 +312,7 @@ section .quotes #qu1 {
 }
 section .quotes #qu2 {
     font-size:1.2em;
-    color:#5e5e5e;
+    color:#ffffff;
     font-family: monospace,serif;
 }
 section .quotes #qu3 {
@@ -322,7 +322,7 @@ section .quotes #qu3 {
 }
 section .quotes #qu4 {
     font-size:1.2em;
-    color:#5e5e5e;
+    color:#ffffff;
     font-family: monospace,serif;
 }
 section .quotes #qu5 {
@@ -332,7 +332,7 @@ section .quotes #qu5 {
 }
 section .quotes #qu6 {
     font-size:1.2em;
-    color:#5e5e5e;
+    color:#ffffff;
     font-family: monospace,serif;
 }
 section .quotes #qu7 {
@@ -342,7 +342,7 @@ section .quotes #qu7 {
 }
 section .quotes #qu8 {
     font-size:1.2em;
-    color:#5e5e5e;
+    color:#ffffff;
     font-family: monospace,serif;
 }
 
